@@ -1,0 +1,25 @@
+{
+  "name": "rakshakos",
+  "version": "1.0.0",
+  "description": "RakshakOS — Unified AI Cyber-Fraud Defense | Aavishkar Engineering & Technology Research Prototype",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
+    "test": "npm --prefix backend test",
+    "start": "npm --prefix backend start"
+  },
+  "keywords": [
+    "cybersecurity",
+    "phishing-defense",
+    "social-engineering",
+    "multimodal-ai",
+    "explainable-ai",
+    "aavishkar-research"
+  ],
+  "author": "RakshakOS Research Initiative",
+  "license": "Apache-2.0"
+}
