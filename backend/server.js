@@ -86,12 +86,12 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`================================================================`);
   console.log(`🛡️  RakshakOS Unified AI Cyber-Fraud Defense Engine Active`);
   console.log(`🚀 Port: ${PORT}`);
   console.log(`🔬 Mode: Research Prototype / Aavishkar E&T Demonstrator`);
-  console.log(`📡 Health: http://localhost:${PORT}/api/health`);
+  console.log(`📡 Health: http://0.0.0.0:${PORT}/api/health`);
   console.log(`================================================================`);
 });
 
