@@ -58,8 +58,22 @@ app.use('/api/scan', scanRoutes);
 app.use('/api/intel', intelRoutes);
 app.use('/api/research', researchRoutes);
 
-// Fallback 404 handler
-app.use((req, res) => {
+const path = require('path');
+const fs = require('fs');
+
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+  app.get('*', (req, res, next) => {
+    if (req.originalUrl.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(frontendDistPath, 'index.html'));
+  });
+}
+
+// Fallback 404 handler for API
+app.use('/api', (req, res) => {
   res.status(404).json({ error: 'Endpoint not found on RakshakOS Threat Engine' });
 });
 
