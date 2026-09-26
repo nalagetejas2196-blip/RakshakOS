@@ -16,14 +16,14 @@ export default function Footer() {
                 Rakshak<span className="text-cyan-400">OS</span>
               </span>
               <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-500/30">
-                Aavishkar 2026
+                SIH 2026
               </span>
             </div>
             <p className="text-xs text-cyan-400/90 font-semibold mb-2">
               "{t('research_motto', "DON'T JUST DETECT THE SIGNAL. UNDERSTAND THE CONTEXT.")}"
             </p>
             <p className="text-[11px] text-slate-500 leading-relaxed">
-              SPPU Aavishkar Research Convention 2026 • Category: Engineering & Technology • Multimodal Cyber-Fraud Prevention Prototype.
+              Smart India Hackathon (SIH 2026) • Category: Student Innovation • Proposed Context-Aware OS-Integrated Cyber Defense Framework.
             </p>
           </div>
 

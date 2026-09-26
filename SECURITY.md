@@ -1,7 +1,7 @@
 # Security Policy — RakshakOS
 
-## 1. Research Prototype Scope & Notice
-**RakshakOS** is an academic research prototype designed for the **Aavishkar Engineering & Technology** competition. It demonstrates context-aware multimodal intelligence for proactive defense against AI-enabled cyber fraud across mobile and web interaction boundaries.
+## 1. Project Scope & Innovation Notice
+**RakshakOS** is an innovative cybersecurity defense system prototype engineered for **Smart India Hackathon (SIH 2026)** under the **Student Innovation** category. It demonstrates context-aware multimodal intelligence for proactive defense against AI-enabled cyber fraud across mobile operating system and web interaction boundaries.
 
 **Crucial Notice:**
 RakshakOS is **not** a standalone operating system kernel; it is a proposed operating-system/device-level defense layer and demonstrator. It does not replace low-level OS kernel security or commercial endpoint protection.

@@ -58,10 +58,10 @@ export default function ResearchDashboard() {
         <div className="relative z-10 space-y-2">
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-500/30">
-              SPPU Aavishkar Research Convention 2026
+              Smart India Hackathon (SIH 2026)
             </span>
             <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-500/30">
-              Category: Engineering & Technology
+              Category: Student Innovation
             </span>
           </div>
 

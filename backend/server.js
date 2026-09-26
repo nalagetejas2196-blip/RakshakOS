@@ -1,6 +1,6 @@
 /**
  * RakshakOS API Server — Unified AI Cyber-Fraud Defense Engine
- * Aavishkar Engineering & Technology Research Prototype
+ * Smart India Hackathon (SIH 2026) — Student Innovation Prototype
  */
 
 require('dotenv').config();
@@ -39,7 +39,8 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'ONLINE',
     system: 'RakshakOS Unified Threat Orchestrator',
-    prototypeVersion: '2.4-Aavishkar',
+    prototypeVersion: '3.0-SIH2026-StudentInnovation',
+    edition: 'Smart India Hackathon 2026',
     timestamp: new Date().toISOString(),
     uptimeSeconds: process.uptime(),
     activeModules: [
@@ -90,7 +91,7 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`================================================================`);
   console.log(`🛡️  RakshakOS Unified AI Cyber-Fraud Defense Engine Active`);
   console.log(`🚀 Port: ${PORT}`);
-  console.log(`🔬 Mode: Research Prototype / Aavishkar E&T Demonstrator`);
+  console.log(`🔬 Mode: Smart India Hackathon (SIH 2026) Student Innovation Prototype`);
   console.log(`📡 Health: http://0.0.0.0:${PORT}/api/health`);
   console.log(`================================================================`);
 });

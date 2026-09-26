@@ -3,12 +3,12 @@ const router = express.Router();
 
 router.get('/metrics', (req, res) => {
   res.json({
-    researchIdentity: {
-      convention: 'SPPU Aavishkar Research Convention 2026',
-      category: 'Engineering & Technology',
-      track: 'Systems Security & Multimodal Artificial Intelligence',
+    innovationIdentity: {
+      competition: 'Smart India Hackathon (SIH 2026)',
+      category: 'Student Innovation',
+      track: 'Next-Gen Cybersecurity & Citizen Digital Protection',
       motto: "DON'T JUST DETECT THE SIGNAL. UNDERSTAND THE CONTEXT.",
-      scopeDefinition: 'Research Prototype / AI-Assisted Cyber-Fraud Defense Demonstrator. Not an OS kernel replacement.'
+      scopeDefinition: 'OS/Device-Level Intelligent Security Framework situated at the mobile interaction boundary. Validated via prototype & empirical benchmarks.'
     },
     dataset: {
       name: 'PhishNet-URL-88K Multimodal Cyber-Fraud Benchmark',

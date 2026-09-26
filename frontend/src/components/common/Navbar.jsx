@@ -30,9 +30,10 @@ export default function Navbar() {
     { path: '/', label: t('nav_home', 'Home') },
     { path: '/security-center', label: t('nav_security_center', 'Security Center') },
     { path: '/scanner', label: t('nav_scanner', 'Threat Scanner') },
+    { path: '/simulator', label: t('nav_simulator', 'OS Simulator') },
     { path: '/threat-intel', label: t('nav_intel', 'Threat Intel') },
     { path: '/education', label: t('nav_education', 'Education') },
-    { path: '/research', label: t('nav_research', 'Research') },
+    { path: '/sih-innovation', label: t('nav_sih', 'SIH 2026 Innovation') },
     { path: '/my-safety', label: t('nav_my_safety', 'My Safety') }
   ];
 
@@ -58,7 +59,7 @@ export default function Navbar() {
                 Rakshak<span className="text-cyan-400">OS</span>
               </span>
               <span className="text-[10px] font-mono px-2 py-0.2 rounded-full bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 hidden sm:inline-block">
-                Aavishkar 2026
+                SIH 2026
               </span>
             </div>
             <p className="text-[10px] text-slate-400 font-mono hidden md:block">

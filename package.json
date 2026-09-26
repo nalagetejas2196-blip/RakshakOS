@@ -1,7 +1,7 @@
 {
   "name": "rakshakos",
   "version": "1.0.0",
-  "description": "RakshakOS — Unified AI Cyber-Fraud Defense | Aavishkar Engineering & Technology Research Prototype",
+  "description": "RakshakOS — Unified AI Cyber-Fraud Defense | Smart India Hackathon (SIH 2026) Student Innovation Prototype",
   "private": true,
   "scripts": {
     "install:all": "npm --prefix backend install && npm --prefix frontend install",
@@ -17,11 +17,14 @@
   },
   "keywords": [
     "cybersecurity",
+    "sih-2026",
+    "student-innovation",
     "phishing-defense",
     "social-engineering",
+    "os-integration",
+    "i4c-cybercrime",
     "multimodal-ai",
-    "explainable-ai",
-    "aavishkar-research"
+    "explainable-ai"
   ],
   "author": "RakshakOS Research Initiative",
   "license": "Apache-2.0"

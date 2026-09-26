@@ -16,6 +16,8 @@ import ThreatIntelPage from './pages/ThreatIntelPage';
 import EducationPage from './pages/EducationPage';
 import ResearchDashboard from './pages/ResearchDashboard';
 import MySafetyPage from './pages/MySafetyPage';
+import OsBoundarySimulator from './components/simulator/OsBoundarySimulator';
+import SihInnovationPage from './pages/SihInnovationPage';
 
 export default function App() {
   return (
@@ -35,6 +37,8 @@ export default function App() {
                   <Route path="/education" element={<EducationPage />} />
                   <Route path="/research" element={<ResearchDashboard />} />
                   <Route path="/my-safety" element={<MySafetyPage />} />
+                  <Route path="/simulator" element={<OsBoundarySimulator />} />
+                  <Route path="/sih-innovation" element={<SihInnovationPage />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </main>

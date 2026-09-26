@@ -117,7 +117,7 @@ export default function DemoScenarioBar({ onSelectDemo }) {
           </div>
           <div>
             <h4 className="text-xs font-mono font-bold text-slate-100 flex items-center gap-2">
-              Aavishkar 3-Minute Live Jury Presentation Bar
+              Smart India Hackathon (SIH 2026) Live Jury Presentation Bar
               <span className="text-[10px] text-cyan-400 font-normal">
                 (Click any preset to trigger instant end-to-end pipeline)
               </span>

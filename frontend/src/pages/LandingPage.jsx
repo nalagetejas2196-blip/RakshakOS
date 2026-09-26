@@ -66,10 +66,11 @@ export default function LandingPage() {
               </button>
 
               <button
-                onClick={() => navigate('/research')}
-                className="flex items-center gap-2 px-4 py-3 rounded-xl border border-cyan-500/30 bg-cyan-950/20 text-cyan-300 hover:bg-cyan-950/40 text-xs font-mono transition-all"
+                onClick={() => navigate('/sih-innovation')}
+                className="flex items-center gap-2 px-5 py-3.5 rounded-xl border border-cyan-500/40 bg-cyan-950/40 text-cyan-300 hover:bg-cyan-900/50 text-xs font-mono font-bold transition-all shadow-[0_0_15px_rgba(0,240,255,0.2)]"
               >
-                {t('hero_view_research', 'View Aavishkar Research')}
+                <Award className="w-4 h-4 text-cyan-400" />
+                {t('hero_view_research', 'SIH 2026 Innovation Hub')}
               </button>
             </div>
 

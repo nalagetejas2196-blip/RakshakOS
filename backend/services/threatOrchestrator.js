@@ -103,9 +103,9 @@ function orchestrateThreatScan({ type, payload, context = {} }) {
     decisionLabel: label,
     scoreClassification: 'Prototype Risk Score (Multimodal Engine)',
     engineMeta: {
-      primaryModule: moduleResult.engine || 'RakshakOS Contextual Reasoning Engine v2.0',
-      standardsGuidance: 'NIST AI RMF 1.0 / NIST CSF 2.0 / OWASP Mobile Security',
-      framework: 'RakshakOS SPPU Aavishkar Research Architecture'
+      primaryModule: moduleResult.engine || 'RakshakOS Contextual Reasoning Engine v3.0',
+      standardsGuidance: 'NIST AI RMF 1.0 / NIST CSF 2.0 / OWASP Mobile Security / I4C CFCFRMS',
+      framework: 'RakshakOS SIH 2026 Student Innovation Architecture'
     },
     rawModuleOutput: moduleResult,
     indicators: moduleResult.indicators || [],

@@ -12,14 +12,17 @@ import {
   CheckSquare,
   Square,
   AlertOctagon,
-  ShieldCheck
+  ShieldCheck,
+  FileText
 } from 'lucide-react';
+import I4CGoldenHourModal from './I4CGoldenHourModal';
 
 export default function EmergencyModal() {
   const { t } = useLanguage();
   const { isEmergencyOpen, closeEmergencyModal } = useSafety();
 
   const [checkedSteps, setCheckedSteps] = useState({});
+  const [isDocketOpen, setIsDocketOpen] = useState(false);
 
   if (!isEmergencyOpen) return null;
 
@@ -164,21 +167,46 @@ export default function EmergencyModal() {
         </div>
 
         {/* Modal Bottom CTA */}
-        <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
+        <div className="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span className="text-xs font-mono text-slate-400">
             Completed:{' '}
             <strong className="text-emerald-400">
               {Object.values(checkedSteps).filter(Boolean).length} / {steps.length}
             </strong>
           </span>
-          <button
-            onClick={closeEmergencyModal}
-            className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-mono text-slate-200"
-          >
-            Close Emergency Protocol
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setIsDocketOpen(true)}
+              className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-xs font-mono text-white font-semibold flex items-center gap-1.5 transition-all shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+            >
+              <FileText className="w-3.5 h-3.5" />
+              1930 CFCFRMS Freeze Docket
+            </button>
+            <button
+              onClick={closeEmergencyModal}
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-mono text-slate-200"
+            >
+              Close Protocol
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* CFCFRMS Golden Hour Freeze Docket Modal */}
+      <I4CGoldenHourModal
+        isOpen={isDocketOpen}
+        onClose={() => setIsDocketOpen(false)}
+        incidentData={{
+          caseId: `I4C-${Date.now().toString().slice(-8)}`,
+          timestamp: new Date().toISOString(),
+          fraudType: 'Critical Financial Scam / Unauthorized UPI Debit',
+          suspectVpa: 'suspect.fraudster88@okhdfcbank',
+          suspectPhone: '+91 98210 99881',
+          lostAmount: '₹35,000 (Pending Lien)',
+          utrNumber: '519283740192',
+          threatVector: 'Immediate Emergency Protocol Escalation'
+        }}
+      />
     </div>
   );
 }
